@@ -21,7 +21,7 @@ The modules covered by the Javascript documentation are those imported via <code
 
 ### Accessing the documentation
 
-There are two ways of accessing this documentation, one of which is what you are currently using. The first method is accessing it online, which will be available at <a class="ulink" href="http://linuxmint.github.io" target="_top">http://linuxmint.github.io</a>.</p>
+There are two ways of accessing this documentation, one of which is what you are currently using. The first method is accessing it online, which will be available at <a class="ulink" href="http://linuxmint.github.io" target="_top">http://linuxmint.github.io</a>.
 
 The second method is to access it locally. Install the program <code class="code">devhelp</code> and the <code class="code">cinnamon-doc</code> package (might be named differently in different distros or included in the <code class="code">cinnamon</code> package itself). Then run the program <code class="code">devhelp</code> to access all documentations you have installed in your system (not limited to Cinnamon).
 
@@ -65,7 +65,7 @@ Translating object names is the easiest of all.
 
 If you look at the page of <code class="code">StBin</code>, you will see that the functions have very long names like <code class="code">st_bin_get_child</code>. Since we are just pretending to have objects via GObjects, and objects do not genuinely exist in C, the functions do not "belong" to the objects. We simply put the name of the object in front of the function name and trust people will actually use it on the proper object.
 
-In C, objects are imported as if they were objects, and functions <span class="emphasis"><em>do</em></span> belong to the objects. So if <code class="code">actor</code> is an <code class="code">StBin</code>, we do not do <code class="code">st_bin_get_child(actor)</code>, but simply <code class="code">actor.get_child()</code>.
+In C, objects are imported as if they were objects, and functions <span class="emphasis"><em>do</em></span> belong to the objects. So if <code class="code">actor</code> is a <code class="code">StBin</code>, we do not do <code class="code">st_bin_get_child(actor)</code>, but simply <code class="code">actor.get_child()</code>.
 
 Note that the C documentation always tells you that the first argument to the function is the object itself. For example, <code class="code">st_bin_get_child</code> takes in an <code class="code">StBin</code> as the argument. We do not need to supply this.
 
